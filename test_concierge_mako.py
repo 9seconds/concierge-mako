@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-import concierge_mako
+import concierge_mako.templater
 
 
 TEMPLATE = """\
@@ -21,10 +21,10 @@ i - 1
 
 
 def test_name():
-    assert concierge_mako.MakoTemplater.name == "mako"
+    assert concierge_mako.templater.MakoTemplater.name == "mako"
 
 
 def test_render():
-    tpl = concierge_mako.MakoTemplater()
+    tpl = concierge_mako.templater.MakoTemplater()
 
     assert tpl.render(TEMPLATE) == RESULT
