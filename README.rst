@@ -1,6 +1,8 @@
 concierge-mako
 ==============
 
+|PyPI| |Build Status| |Code Coverage|
+
 ``concierge-mako`` provides support of Mako_ templates for concierge_.
 
 To interpret your ``~/.conciergerc`` as Mako template, just use ``-u`` flag:
